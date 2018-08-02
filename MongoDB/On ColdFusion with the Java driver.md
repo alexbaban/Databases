@@ -2,8 +2,12 @@
 
 ## MongoDB Driver Installation
 
+* install MongoDB "Community Server" and tools  
+  (https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/)
+  (https://www.mongodb.com/download-center?jmp=nav#community)  
+  
 * read at (http://mongodb.github.io/mongo-java-driver/3.8/driver/getting-started/installation/)
-* download at (https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongo-java-driver/3.8.0/)  
+* download Java driver at (https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongo-java-driver/3.8.0/)  
    `mongo-java-driver-3.8.0.jar`
 * copy to `\WEB-INF\lib`
 * restart ColdFusion server
