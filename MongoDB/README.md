@@ -28,8 +28,8 @@ Other shutdowns are unclean and can compromise the validity of the data files.
 
 * open "Command Prompt"
   - `mongo` // start the mongo shell
-  - `use admin` // switched to db admin
-  - `db` // admin
-  - `db.shutdownServer()` // server should be down...
+  - `use admin` // shows "switched to db admin"
+  - `db` // should show "admin"
+  - `db.shutdownServer()` // shows "server should be down..."
   - `quit()` // exit the mongo shell
   
