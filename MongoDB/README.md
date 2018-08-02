@@ -27,8 +27,9 @@ In a clean shutdown a mongod completes all pending operations, flushes all data 
 Other shutdowns are unclean and can compromise the validity of the data files.
 
 * open "Command Prompt"
-  - `mongo`
-  - `use admin`
-  - `db.shutdownServer()`
-  - `quit()`
+  - `mongo` // start the mongo shell
+  - `use admin` // switched to db admin
+  - `db` // admin
+  - `db.shutdownServer()` // server should be down...
+  - `quit()` // exit the mongo shell
   
