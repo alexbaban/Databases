@@ -3,8 +3,8 @@
 ## MongoDB Driver Installation
 
 * read at (http://mongodb.github.io/mongo-java-driver/3.8/driver/getting-started/installation/)
-* download at (https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongo-java-driver/3.8.0/)
-  `mongo-java-driver-3.8.0.jar`
+* download at (https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongo-java-driver/3.8.0/)  
+   `mongo-java-driver-3.8.0.jar`
 * copy to `\WEB-INF\lib`
 * restart ColdFusion server
 
@@ -15,7 +15,7 @@
 <cfoutput>#now()#</cfoutput>
 <hr />
 
-<cfset Mongo  = CreateObject("java","com.mongodb.MongoClient").init("localhost")>
+<cfset Mongo = CreateObject("java","com.mongodb.MongoClient").init("localhost")>
 <cfdump var="#Mongo#" expand="false" />
 <hr />
 
@@ -42,8 +42,8 @@
 		.parse(serializeJSON(args)) 
 />
 
-<cfset res  = coll.countDocuments(parsedArgs) />
-<cfdump var="#res#" />
+<cfset count  = coll.countDocuments(parsedArgs) />
+<cfdump var="#count#" />
 <hr />
 
 <cfset res  = coll.find(parsedArgs).iterator().next().toString() />
