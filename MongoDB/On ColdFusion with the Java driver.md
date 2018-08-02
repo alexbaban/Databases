@@ -36,7 +36,7 @@
 
 <cfset args = {
     'Educational Attainment': {
-        '$regex': '^T.*on',
+        '$regex': '^High',
         '$options': 'i'
     }
 } />
